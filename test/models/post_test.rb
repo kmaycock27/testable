@@ -15,5 +15,4 @@ class PostTest < ActiveSupport::TestCase
     post = Post.new(title: 'Test')
     assert post.save, 'Saved the post with a title presence'
   end
-
 end

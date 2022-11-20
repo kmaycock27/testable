@@ -6,12 +6,12 @@ class PostTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
-  test "should not save post without title" do
+  test 'should not save post without title' do
     post = Post.new
     assert_not post.save, "Saved the post without a title"
   end
 
-  test "should save the post with a title" do
+  test 'should save the post with a title' do
     post = Post.new(title: "Test")
     assert post.save, "Saved the post with a title presence"
   end
